@@ -272,7 +272,261 @@ html {
 
 
 
+@media (max-width: 1200px) {
 
+  #envelope {
+    position: absolute;
+    height: 250px; /* Adjust based on your needs */
+    width: 400px; /* Adjust based on your needs */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 370px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
+    z-index: 5;
+    background-color: rgba(229, 130, 143, 0.35);
+  }
+
+
+
+  #envelopeBottom, #envelopeRight, #envelopeTop, #envelopeLeft {
+    position: absolute;
+  }
+
+  #envelopeBottom {
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 125px solid rgb(237, 156, 156);
+    z-index: 5;
+  }
+
+  #envelopeLeft {
+
+    border-left: 200px solid rgb(255, 192, 203);
+    border-top: 125px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 125px solid transparent;
+    z-index: 5;
+  }
+
+  #envelopeRight{
+    border-left: 200px solid transparent;
+    border-top: 125px solid transparent;
+    border-right: 200px solid rgb(255, 192, 203);
+    border-bottom: 125px solid transparent;
+    z-index: 5;
+  }
+
+  #envelopeTop{
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 125px solid rgb(215, 56, 56) !important;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 125px solid transparent;
+    transition: transform 0.6s ease-in-out;
+    transform-origin: top; /* Adjust rotation origin */
+    z-index: 3;
+  }
+  .flip{
+    transform: rotateX(180deg);
+  }
+
+
+
+  #openButton {
+    background-color: transparent;
+    position: absolute;
+    height: 35px; /* Adjust based on your needs */
+    width: 140px; /* Adjust based on your needs */
+    left: 22%;
+    transform: translateX(-22%);
+    top: 750px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
+    color: #FF0000B2;
+    border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
+    font-weight: 800;
+    transition: background-color 0.5s ease; /* Soft fade effect */
+
+  }
+  #openButton:hover, #resetButton:hover{
+    cursor: pointer;
+    background-color: rgba(255, 181, 197, 0.8);
+  }
+
+
+  #resetButton {
+    background-color: transparent;
+    position: absolute;
+    height: 35px; /* Adjust based on your needs */
+    width: 140px; /* Adjust based on your needs */
+    left: 78%;
+    transform: translateX(-78%);
+    top: 750px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
+    color: #FF0000B2;
+    border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
+    font-weight: 800;
+    transition: background-color 0.5s ease; /* Soft fade effect */
+
+  }
+
+  #heartOne {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 55%; /* Adjust based on envelope's position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 25px;
+    z-index: 4;
+  }
+
+
+
+
+  #heartTwo{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    left: 55%;
+    transform: translateX(-50%);
+    top: 500px;
+    z-index: 4;
+    display: none; /* Adjust as needed */
+  }
+
+  #heartThree{
+    position: absolute;
+    height: 20px;
+    width: 23px;
+    left: 53%;
+    transform: translateX(-50%);
+    top: 525px;
+    z-index: 4;
+    display: none; /* Adjust as needed */
+  }
+
+
+
+  #letter{
+    height: 230px;
+    background-color: rgba(244, 156, 175, 0.8);
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1px;
+    transition: top 0.6s ease 0.6s; /* Smooth transition of the top property over 6s */
+  }
+  #envelope:hover{
+    cursor: pointer;
+  }
+
+  #lineOne{
+    position: relative;
+    top: 15px;
+    height: 15px;
+    width: 150px;
+    left: 20px;
+    background-color: rgba(251, 192, 216, 0.85);
+    z-index: 0;
+    font-size: 11px;
+    padding-left: 3px;
+    font-family: Plumpfull, serif;
+  }
+
+  #lineTwo{
+    position: relative;
+    top: 30px;
+    height: 15px;
+    width: 250px;
+    left: 20px;
+    background-color: rgba(251, 192, 216, 0.85);
+    z-index: 1;
+    font-size: 11px;
+    padding-left: 3px;
+    font-family: Plumpfull, serif;
+
+  }
+
+
+  #lineThree{
+    position: relative;
+    top: 40px;
+    height: 25px;
+    width: 250px;
+    left: 20px;
+    background-color: rgba(251, 192, 216, 0.85);
+    z-index: 1;
+  }
+
+
+
+
+
+
+
+  @keyframes floatUpwards1 {
+    0% {
+      transform: translate(0, 0) scale(1) rotate(3deg);
+      opacity: 1;
+    }
+
+    25% {
+      transform: translate(0, -66vh) scale(1.5) rotate(-3deg);
+      opacity: 0.75;
+    }
+
+    50% {
+      transform: translate(0, -88vh) scale(1.5) rotate(3deg);
+      opacity: 0.75;
+    }
+
+    50% {
+      transform: translate(0, -110vh) scale(1.5) rotate(-3deg);
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: translate(0, -140vh) scale(2) rotate(3deg);
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+
+
+  #letterLetter{
+    background-color: rgba(244, 156, 175, 0.8);
+    position: absolute;
+    height: 70vh;
+    width: 75vw;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
+    font-family: Plumpfull, serif;
+    padding: 50px;
+    font-size: 32px;
+
+  }
+
+  #lineTwoLetter{
+    top: 150px;
+    position: absolute;
+
+  }
+
+}
 
 
 

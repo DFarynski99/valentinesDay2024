@@ -369,7 +369,7 @@ html {
     width: 140px; /* Adjust based on your needs */
     left: 19%;
     transform: translateX(-19%);
-    top: 550px;
+    top: 650px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
     border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
@@ -390,7 +390,7 @@ html {
     width: 140px; /* Adjust based on your needs */
     left: 81%;
     transform: translateX(-81%);
-    top: 550px;
+    top: 650px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
     border: 2px solid #FF0000B2; /* This sets the border width, style, and color */

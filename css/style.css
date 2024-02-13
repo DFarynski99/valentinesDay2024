@@ -16,6 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background-color: #ffdbe0;
+  overflow-y: hidden;
 }
 
 #envelope {
@@ -274,6 +275,15 @@ html {
 
 @media (max-width: 1200px) {
 
+
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #ffdbe0;
+    overflow-y: hidden;
+  }
+
   #envelope {
     position: absolute;
     height: 250px; /* Adjust based on your needs */
@@ -344,8 +354,8 @@ html {
     position: absolute;
     height: 35px; /* Adjust based on your needs */
     width: 140px; /* Adjust based on your needs */
-    left: 22%;
-    transform: translateX(-22%);
+    left: 19%;
+    transform: translateX(-19%);
     top: 750px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
@@ -365,8 +375,8 @@ html {
     position: absolute;
     height: 35px; /* Adjust based on your needs */
     width: 140px; /* Adjust based on your needs */
-    left: 78%;
-    transform: translateX(-78%);
+    left: 81%;
+    transform: translateX(-81%);
     top: 750px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;

@@ -173,6 +173,18 @@ html {
   cursor: pointer;
 }
 
+#envelopeBackground{
+  position: absolute;
+  top: 0;
+  width: 399px;
+  height: 200px;
+  background-color: rgba(229, 130, 143, 0.35);
+}
+
+
+
+
+
 #lineOne{
   position: relative;
   top: 15px;
@@ -357,7 +369,7 @@ html {
     width: 140px; /* Adjust based on your needs */
     left: 19%;
     transform: translateX(-19%);
-    top: 650px;
+    top: 550px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
     border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
@@ -378,7 +390,7 @@ html {
     width: 140px; /* Adjust based on your needs */
     left: 81%;
     transform: translateX(-81%);
-    top: 650px;
+    top: 550px;
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
     border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
@@ -438,6 +450,17 @@ html {
   #envelope:hover{
     cursor: pointer;
   }
+
+
+  #envelopeBackground{
+    position: absolute;
+    top: -100px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(229, 130, 143, 0.35);
+  }
+
+
 
   #lineOne{
     position: relative;

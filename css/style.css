@@ -273,14 +273,44 @@ html {
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
   font-family: Plumpfull, serif;
   padding: 50px;
+  font-size: 36px;
 }
 
 #lineTwoLetter{
-  top: 150px;
+  top: 200px;
   position: absolute;
-
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
 }
-
+#lineThreeLetter{
+  top: 300px;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+}
+#lineFourLetter{
+  top: 400px;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+}
+#lineFiveLetter{
+  top: 500px;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+}
+#lineSixLetter{
+  top: 600px;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+}
 
 
 

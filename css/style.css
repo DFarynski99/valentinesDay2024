@@ -15,7 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background-color: #ffdbe0;
+  background-color: grey;
   overflow-y: hidden;
 }
 
@@ -24,8 +24,8 @@ html {
   height: 250px; /* Adjust based on your needs */
   width: 400px; /* Adjust based on your needs */
   left: 50%;
-  transform: translateX(-50%);
-  top: 370px;
+  top: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
   z-index: 5;
   background-color: rgba(229, 130, 143, 0.35);
@@ -36,7 +36,6 @@ html {
 #envelopeBottom, #envelopeRight, #envelopeTop, #envelopeLeft {
   position: absolute;
 }
-
 #envelopeBottom {
   left: 0;
   bottom: 0;
@@ -47,7 +46,6 @@ html {
   border-bottom: 125px solid rgb(237, 156, 156);
   z-index: 5;
 }
-
 #envelopeLeft {
 
   border-left: 200px solid rgb(255, 192, 203);
@@ -56,7 +54,6 @@ html {
   border-bottom: 125px solid transparent;
   z-index: 5;
 }
-
 #envelopeRight{
   border-left: 200px solid transparent;
   border-top: 125px solid transparent;
@@ -64,7 +61,6 @@ html {
   border-bottom: 125px solid transparent;
   z-index: 5;
 }
-
 #envelopeTop{
   left: 0;
   bottom: 0;
@@ -83,20 +79,22 @@ html {
 }
 
 
-
 #openButton {
   background-color: transparent;
   position: absolute;
   height: 35px; /* Adjust based on your needs */
   width: 140px; /* Adjust based on your needs */
-  left: 43%;
-  transform: translateX(-43%);
-  top: 750px;
+  left: 40%;
+  transform: translateX(-40%) translateY(-80%);
+  top: 80%;
+  margin-top: 5% !important;
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
   color: #FF0000B2;
   border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
   font-weight: 800;
   transition: background-color 0.5s ease; /* Soft fade effect */
+  outline: blue 2px dotted !important;
+
 
 }
 #openButton:hover, #resetButton:hover{
@@ -110,22 +108,24 @@ html {
   position: absolute;
   height: 35px; /* Adjust based on your needs */
   width: 140px; /* Adjust based on your needs */
-  left: 57%;
-  transform: translateX(-57%);
-  top: 750px;
+  left: 60%;
+  transform: translateX(-60%) translateY(-80%);
+  top: 80%;
+  margin-top: 5% !important;
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
   color: #FF0000B2;
   border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
   font-weight: 800;
   transition: background-color 0.5s ease; /* Soft fade effect */
+  outline: blue 2px dotted !important;
 
 }
 
 #heartOne {
   display: none; /* Initially hidden */
   position: absolute;
-  top: 55%; /* Adjust based on envelope's position */
-  left: 50%;
+  left: 44%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 30px;
   height: 25px;
@@ -139,9 +139,9 @@ html {
   position: absolute;
   height: 45px;
   width: 45px;
-  left: 55%;
   transform: translateX(-50%);
-  top: 500px;
+  left: 50%;
+  top: 50%;
   z-index: 4;
   display: none; /* Adjust as needed */
 }
@@ -151,8 +151,8 @@ html {
   height: 20px;
   width: 23px;
   left: 53%;
+  top: 50%;
   transform: translateX(-50%);
-  top: 525px;
   z-index: 4;
   display: none; /* Adjust as needed */
 }

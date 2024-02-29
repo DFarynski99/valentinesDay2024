@@ -73,13 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Check if the resetButton exists before attaching the event listener
-    var resetButton = document.getElementById('resetButton');
-    if (resetButton) {
-      resetButton.addEventListener('click', function() {
-        window.location.reload();
-      });
-    }
+  var resetButton = document.getElementById('resetButton');
+  if (resetButton) {
+    resetButton.addEventListener('click', function() {
+      // Clear sessionStorage items for both textareas
+      sessionStorage.removeItem('savedMessage'); // Remove the item from sessionStorage
+      sessionStorage.removeItem('savedName'); // Remove the item from sessionStorage
 
+      // Reload the page after clearing the sessionStorage
+      window.location.reload();
+    });
+  }
+
+  // Listener for the envelope
   var envelope = document.getElementById('envelope');
   if (envelope) {
     envelope.addEventListener('click', function() {
@@ -87,7 +93,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-    // Check if the backLetter exists before attaching the event listener
+// Prevent click on the textarea from propagating
+  var dearName = document.getElementById('dearName');
+  if (dearName) {
+    dearName.addEventListener('click', function(event) {
+      event.stopPropagation(); // This stops the click from reaching the envelope
+    });
+  }
+
+
+  // Check if the backLetter exists before attaching the event listener
     var backLetter = document.getElementById('backLetter');
     if (backLetter) {
       backLetter.addEventListener('click', function() {
@@ -111,22 +126,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // If the user is navigating back to the index.html from the letter.html
-  var backLetter = document.getElementById('backLetter');
-  if (backLetter) {
-    backLetter.addEventListener('click', function() {
-      // No need to clear the message here since we want it to persist
-      window.location.href = 'index.html';
+  var dearNameTextArea = document.getElementById('dearName');
+  if (dearNameTextArea) {
+    var savedName = sessionStorage.getItem('savedName');
+    if (savedName !== null) {
+      dearNameTextArea.value = savedName;
+    }
+
+    dearNameTextArea.addEventListener('input', function (){
+      sessionStorage.setItem('savedName', this.value);
     });
   }
-
-  // If the user is navigating to the letter.html from the index.html
-  var envelope = document.getElementById('envelope');
-  if (envelope) {
-    envelope.addEventListener('click', function() {
-      window.location.href = 'letter.html';
-    });
-  }
-
 
 });

@@ -83,9 +83,9 @@ html {
   background-color: transparent;
   position: absolute;
   height: 35px; /* Adjust based on your needs */
-  width: 140px; /* Adjust based on your needs */
-  left: 40%;
-  transform: translateX(-40%) translateY(-80%);
+  width: 120px; /* Adjust based on your needs */
+  left: 25%;
+  transform: translateX(-25%) translateY(-80%);
   top: 80%;
   margin-top: 5% !important;
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
@@ -105,9 +105,9 @@ html {
   background-color: transparent;
   position: absolute;
   height: 35px; /* Adjust based on your needs */
-  width: 140px; /* Adjust based on your needs */
-  left: 60%;
-  transform: translateX(-60%) translateY(-80%);
+  width: 120px; /* Adjust based on your needs */
+  left: 75%;
+  transform: translateX(-75%) translateY(-80%);
   top: 80%;
   margin-top: 5% !important;
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
@@ -117,8 +117,6 @@ html {
   transition: background-color 0.5s ease; /* Soft fade effect */
 }
 
-
-
 #backLetter{
   background-color: transparent;
   position: absolute;
@@ -126,7 +124,7 @@ html {
   width: 140px; /* Adjust based on your needs */
   left: 50%;
   transform: translateX(-50%) translateY(-85%);
-  top: 85%;
+  top: 90.5%;
   margin-top: 5% !important;
   box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
   color: #FF0000B2;
@@ -152,7 +150,7 @@ html {
 #message{
   background-color: transparent;
   font-family: 'Plumpfull', serif; /* Ensure the font family is correctly referenced */
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: none;
   width: 90%;
   height: 80%;
@@ -330,9 +328,7 @@ textarea::placeholder {
 
 
 
-
-
-@media (max-width: 1200px) {
+@media (min-width: 460px) and (max-width: 1200px) {
 
 
   html {
@@ -457,19 +453,20 @@ textarea::placeholder {
   #backLetter{
     background-color: transparent;
     position: absolute;
-    height: 75px; /* Adjust based on your needs */
-    width: 300px; /* Adjust based on your needs */
+    height: 35px; /* Adjust based on your needs */
+    width: 150px; /* Adjust based on your needs */
     left: 50%;
     transform: translateX(-50%) translateY(-85%);
-    top: 85%;
+    top: 91%;
     margin-top: 5% !important;
     box-shadow: 10px 8px 40px rgba(0, 0, 0, 0.4); /* Adjust as needed */
     color: #FF0000B2;
-    border: 4px solid #FF0000B2; /* This sets the border width, style, and color */
+    border: 2px solid #FF0000B2 !important; /* This sets the border width, style, and color */
     font-weight: 800;
-    font-size: 1.75rem;
+    font-size: 0.8rem !important;
     transition: background-color 0.5s ease; /* Soft fade effect */
   }
+
 
 
   #heartOne {
@@ -617,13 +614,14 @@ textarea::placeholder {
     position: absolute;
     height: 70vh;
     width: 75vw;
-    top: 100px;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     font-family: Plumpfull, serif;
     padding: 75px 50px 50px;
     font-size: 40px;
+
 
   }
 
@@ -636,33 +634,45 @@ textarea::placeholder {
 
 }
 
-@media (min-width: 460px) and (max-width: 1200px){
-
-  #letterLetter{
-    top: 5%;
-  }
-
-  #backLetter{
+@media (min-width: 1201px) and (max-width: 3840px){
+  #openButton {
     background-color: transparent;
     position: absolute;
-    height: 35px !important; /* Adjust based on your needs */
-    width: 150px !important; /* Adjust based on your needs */
-    left: 50%;
-    transform: translateX(-50%) translateY(-85%);
-    top: 90%;
+    height: 35px; /* Adjust based on your needs */
+    width: 120px; /* Adjust based on your needs */
+    left: 40%;
+    transform: translateX(-40%) translateY(-80%);
+    top: 80%;
     margin-top: 5% !important;
-    box-shadow: 10px 8px 40px rgba(0, 0, 0, 0.4); /* Adjust as needed */
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
     color: #FF0000B2;
-    border: 2px solid #FF0000B2 !important; /* This sets the border width, style, and color */
+    border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
     font-weight: 800;
-    font-size: 0.8rem !important;
     transition: background-color 0.5s ease; /* Soft fade effect */
+
+  }
+  #openButton:hover, #resetButton:hover, #backLetter:hover{
+    cursor: pointer;
+    background-color: rgba(255, 181, 197, 0.8);
   }
 
+
+  #resetButton {
+    background-color: transparent;
+    position: absolute;
+    height: 35px; /* Adjust based on your needs */
+    width: 120px; /* Adjust based on your needs */
+    left: 60%;
+    transform: translateX(-60%) translateY(-80%);
+    top: 80%;
+    margin-top: 5% !important;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust as needed */
+    color: #FF0000B2;
+    border: 2px solid #FF0000B2; /* This sets the border width, style, and color */
+    font-weight: 800;
+    transition: background-color 0.5s ease; /* Soft fade effect */
+  }
 }
-
-
-
 
 
 
